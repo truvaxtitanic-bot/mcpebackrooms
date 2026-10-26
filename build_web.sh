@@ -3,7 +3,7 @@
 # Needs emcc on PATH. Output goes to ./_site
 set -euo pipefail
 ROOT="$(pwd)"
-rm -rf mod; echo "No mod zip needed - building the plain game (plus anything in ./mod or ./mod.zip if you add it)"
+echo "Building the plain game, plus anything in ./mod or ./mod.zip"
 echo "== 1/4 Unpacking web-build.zip"
 rm -rf game
 python3 - <<'PY'
