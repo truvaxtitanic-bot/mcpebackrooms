@@ -47,6 +47,7 @@ if [ -d mod ]; then
   cp -rv mod/. "$WB/"
 fi
 
+     python3 "$WB/tools/apply_backrooms.py" "$WB"
 cd "$WB/project/emscripten"
 rm -rf obj
 mkdir obj
